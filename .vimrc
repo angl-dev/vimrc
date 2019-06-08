@@ -56,6 +56,12 @@ set t_Co=256
 set background=dark
 colorscheme gruvbox
 
+" search will also center the next match
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap * *zz
+nnoremap # #zz
+
 let g:mapleader='q'
 
 " Configuration for easymotion
@@ -64,7 +70,7 @@ map <leader>/ <Plug>(easymotion-sn)
 
 " Configuration for Nerd-tree
 map <leader>d :NERDTreeToggle<CR>
-autocmd VimEnter * NERDTreeToggle
+" autocmd VimEnter * NERDTreeToggle
 let g:NERDTreeShowHidden=1
 let g:NERDTreeShowLineNumbers=1
 let g:NERDTreeChDirMode=2
