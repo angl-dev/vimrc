@@ -3,6 +3,8 @@ cd ~
 case $1 in
     --remote)
         cp ${DIR}/.remote.tmux.conf .tmux.conf
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+	cp ${DIR}/.zprofile .zprofile
         ;;
     --local)
         cp ${DIR}/.local.tmux.conf .tmux.conf
